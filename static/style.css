@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui;
+  background: #f5f7fa;
+  width: 100%;
+}
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #1a1d24;
+  background: linear-gradient(180deg, #ffffff 0%, #f3f4f6 100%);
+  background-size: 27px 27px;
+}
+
+p {
+  color: black;
+}
+
+.themes {
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: red;
+}
+
+.math {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 25px;
+  background-color: green;
+  align-items: center;
+}
+.ML {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: blue;
+}
+
+.card {
+  background: linear-gradient(90deg, #eef1f3, #f5f7fa);
+  width: max-content;
+  color: #1a1d24;
+  padding: 10px 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  border: none;
+  cursor: default;
+}
+
+.card:hover {
+  background: linear-gradient(90deg, #dfe3e6, #e8ebee);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.card:active {
+  transform: translateY(1px);
+  background: #d1d5db;
+}
+
+.work_area {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  background-color: goldenrod;
+  align-items: center;
+}
+
+.viewScreen {
+  background: black;
+  flex: 1;
+  width: 80%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.main_bar {
+  display: flex;
+  justify-items: flex-start;
+  background: gray;
+}
+
+.vectors_bar {
+  display: flex;
+}
+
+.vector_inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.vector_input_item {
+  width: 150;
+  margin-top: 5;
+}
+
+.vector_inputs {
+}
+
+.is_hidden {
+  display: none;
+}

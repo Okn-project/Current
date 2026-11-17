@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Заголовок страницы</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="main_header">ЗАНЯТНЫЙ МАТАН</h1>
+    </header>
+
+    <div class="themes">
+      <div class="math">
+        <button class="theme_card" data-topic="vectors">
+          <strong>Векторы</strong><br />
+          <span>Действия с векторами. Координаты вектора</span>
+        </button>
+      </div>
+
+      <div class="ML"></div>
+    </div>
+
+    <div class="work_area">
+      <div class="tools_bar">
+        <div class="main_bar">
+          <button class="tools_button">переключить анимацию</button>
+          <button class="tools_button">свойства</button>
+          <button class="tools_button">отменить</button>
+          <button class="tools_button">вернуть</button>
+          <button class="tools_button">сбросить тему</button>
+        </div>
+
+        <div class="themes_bar">
+          <div class="themes_bar_item vectors_bar is_hidden">
+            <button class="tools_button" data-topic="create_vector">
+              создать вектор
+            </button>
+            <button class="tools_button">создать точку</button>
+            <button class="tools_button" data-topic="add_vectors">
+              сложение векторов
+            </button>
+            <button class="tools_button">Умножение вектора на число</button>
+          </div>
+        </div>
+      </div>
+
+      <canvas id="viewScreenId" class="viewScreen"></canvas>
+
+      <div class="features"></div>
+
+      <div class="params"></div>
+    </div>
+
+    <footer class="footer"></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- Векторы 
+    <p class="point_header">создать точку</p>
+    <label for="enter_x" class="enter_num">x</label>
+	<input type="number" id="enter_x" name="x" />
+    <label for="enter_y" class="enter_num">y</label>
+    <input type="number" id="enter_y" name="y" />
+    <button id="create_point">создать</button>
+	
+    <script src="script.js"></script>
+	<script src="canvas.js"></script>
+	-->
