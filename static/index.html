@@ -1,60 +1,85 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Заголовок страницы</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1 class="main_header">ЗАНЯТНЫЙ МАТАН</h1>
-    </header>
 
-    <div class="themes">
-      <div class="math">
-        <button class="theme_card" data-topic="vectors">
-          <strong>Векторы</strong><br />
-          <span>Действия с векторами. Координаты вектора</span>
+<head>
+  <meta charset="UTF-8" />
+  <title>Заголовок страницы</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1 class="main_header">ЗАГОЛОВОК</h1>
+  </header>
+
+  <div class="themes">
+    <div class="math">
+      <button class="theme_card" data-topic="vectors">
+        <strong>Векторы</strong><br />
+        <span>Действия с векторами. Координаты вектора</span>
+      </button>
+    </div>
+
+    <div class="ML"></div>
+  </div>
+
+  <div class="work_area">
+    <div class="chosen_theme">
+      <div class="chosen_theme_item vectors_bar is_hidden">
+        <button class="tools_button" data-topic="create_vector">
+          создать вектор
         </button>
+        <button class="tools_button" data-topic="create_point">создать точку</button>
+        <button class="tools_button" data-topic="add_vectors">
+          сложение векторов
+        </button>
+        <button class="tools_button">Умножение вектора на число</button>
       </div>
-
-      <div class="ML"></div>
     </div>
 
-    <div class="work_area">
-      <div class="tools_bar">
-        <div class="main_bar">
-          <button class="tools_button">переключить анимацию</button>
-          <button class="tools_button">свойства</button>
-          <button class="tools_button">отменить</button>
-          <button class="tools_button">вернуть</button>
-          <button class="tools_button">сбросить тему</button>
-        </div>
+    <div class="input_item vector_inputs is_hidden">
+      <label for="input_vector_x">координата вектора x</label>
+      <input type="number" class="input_crd vector_input_x" placeholder="0" />
+      <label for="input_vector_y">координата вектора y</label>
+      <input type="number" class="input_crd vector_input_y" placeholder="0" />
+      <button class="input_crd" id="create_vector_button">
+        создать
+      </button>
+    </div> <!-- Векторы	-->
 
-        <div class="themes_bar">
-          <div class="themes_bar_item vectors_bar is_hidden">
-            <button class="tools_button" data-topic="create_vector">
-              создать вектор
-            </button>
-            <button class="tools_button">создать точку</button>
-            <button class="tools_button" data-topic="add_vectors">
-              сложение векторов
-            </button>
-            <button class="tools_button">Умножение вектора на число</button>
-          </div>
-        </div>
-      </div>
+    <div class="input_item point_inputs is_hidden">
+      <label for="point_input_x">координата точки x</label>
+      <input type="number" class="input_crd point_input_x" placeholder="0" />
+      <label for="point_input_y">координата точки y</label>
+      <input type="number" class="input_crd point_input_y" placeholder="0" />
+      <button class="input_crd" id="create_point_button">
+        создать
+      </button>
+    </div> <!-- Точки	-->
 
-      <canvas id="viewScreenId" class="viewScreen"></canvas>
 
-      <div class="features"></div>
 
-      <div class="params"></div>
+  </div>
+
+  <div class="view_bar">
+    <div class="main_bar">
+      <button class="tools_button">переключить анимацию</button>
+      <button class="tools_button">свойства</button>
+      <button class="tools_button">отменить</button>
+      <button class="tools_button">вернуть</button>
+      <button class="tools_button">сбросить тему</button>
     </div>
+    <canvas id="viewScreenId" class="viewScreen"></canvas>
 
-    <footer class="footer"></footer>
-    <script src="script.js"></script>
-  </body>
+    <div class="features"></div>
+
+    <div class="params"></div>
+  </div>
+
+  <footer class="footer"></footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
 
 <!-- Векторы 

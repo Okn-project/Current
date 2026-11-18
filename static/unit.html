@@ -1,49 +1,40 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=
-    , initial-scale=1.0"
-    />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="themes_bar">
-      <div class="themes_bar_item vectors_bar">
-        <button class="tools_button" data-topic="create_vector">
-          создать вектор
-        </button>
-        <button class="tools_button">создать точку</button>
-        <button class="tools_button" data-topic="add_vectors">
-          сложение векторов
-        </button>
-        <button class="tools_button">Умножение вектора на число</button>
-      </div>
-    </div>
 
-    <div class="input_item vector_inputs">
-      <label for="input_vector_x">координата вектора x</label>
-      <input
-        type="number"
-        class="vector_input_item vector_input_x"
-        placeholder="0"
-      />
-      <label for="input_vector_y">координата вектора y</label>
-      <input
-        type="number"
-        class="vector_input_item vector_input_y"
-        placeholder="0"
-      />
-      <button class="vector_input_item" id="create_vector_button">
-        создать
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=
+    , initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="chosen_theme">
+    <div class="chosen_theme_item vectors_bar is_hidden">
+      <button class="tools_button" data-topic="create_vector">
+        создать вектор
       </button>
+      <button class="tools_button data-topic=" create_point"">создать точку</button>
+      <button class="tools_button" data-topic="add_vectors">
+        сложение векторов
+      </button>
+      <button class="tools_button">Умножение вектора на число</button>
     </div>
+  </div>
 
-    <div class="create_point_input"></div>
-    <div class="_wrapper"></div>
-    <div class="_wrapper"></div>
-  </body>
-  <script src="script.js"></script>
+  <div class="input_item point_inputs is_hidden">
+    <label for="point_input_x">координата точки x</label>
+    <input type="number" class="input_crd point_input_x" placeholder="0" />
+    <label for="point_input_y">координата точки y</label>
+    <input type="number" class="input_crd point_input_y" placeholder="0" />
+    <button class="input_crd" id="create_point_button">
+      создать
+    </button>
+  </div> <!-- Точки	-->
+
+
+
+</body>
+<script src="script.js"></script>
+
 </html>

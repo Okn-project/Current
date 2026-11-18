@@ -64,7 +64,7 @@ p {
 
 .work_area {
   display: flex;
-  height: 100vh;
+  height: 20vh;
   flex-direction: column;
   background-color: goldenrod;
   align-items: center;
@@ -87,18 +87,21 @@ p {
   display: flex;
 }
 
-.vector_inputs {
+.input_item {
   display: flex;
   flex-direction: column;
 }
 
-.vector_input_item {
+
+
+.input_crd {
   width: 150;
   margin-top: 5;
 }
 
-.vector_inputs {
-}
+
+
+
 
 .is_hidden {
   display: none;
