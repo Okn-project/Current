@@ -4,7 +4,7 @@ const themes_controller = {
 
 const vectors_controller = {
   create_vector: "vector_inputs",
-  create_point: "point_inputs"
+  create_point: "point_inputs",
 };
 
 function render_chosen_theme(chosen_theme, e) {

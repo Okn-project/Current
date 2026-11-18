@@ -64,7 +64,7 @@ p {
 
 .work_area {
   display: flex;
-  height: 20vh;
+  height: 10vh;
   flex-direction: column;
   background-color: goldenrod;
   align-items: center;
@@ -74,6 +74,7 @@ p {
   background: black;
   flex: 1;
   width: 80%;
+  height: 45vh;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
@@ -92,16 +93,10 @@ p {
   flex-direction: column;
 }
 
-
-
 .input_crd {
   width: 150;
   margin-top: 5;
 }
-
-
-
-
 
 .is_hidden {
   display: none;
